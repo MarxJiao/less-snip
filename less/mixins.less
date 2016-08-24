@@ -1,0 +1,11 @@
+/**
+ * @file mixins collections
+ * @author MarxJiao
+ * @date 2016.08.24
+ */
+
+// change px to rem base on 20px
+// use: .rem(font-size, 20px)
+.rem(@name, @px) {
+	@{name}: @px / 20 * 1rem;
+}

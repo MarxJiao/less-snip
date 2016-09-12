@@ -9,3 +9,14 @@
 .rem(@name, @px) {
 	@{name}: @px / 20 * 1rem;
 }
+
+/*
+ * 显示line行文字,后面...隐藏
+ */
+.ellipsisLn(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  //display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+}

@@ -1,0 +1,32 @@
+/**
+ * @file 在高分辨率屏幕下显示1像素边框
+ * @author MarxJiao
+ * @date 2016-09-23
+ */
+
+.slim-line {
+    border-bottom: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    width: 100%;
+    height: 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all{
+    .slim-line {
+        width: 150%;
+      transform: scale(.667);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all{
+    .slim-line {
+        width: 200%;
+        transform: scale(.5);
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3), not all{
+    .slim-line {
+        width: 200%;
+        transform: scale(.5);
+    }
+}
